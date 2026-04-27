@@ -11,6 +11,7 @@ function normalizeProjects(items) {
     title: item.title || "Proyecto sin nombre",
     description: item.description || "",
     tags: Array.isArray(item.tags) ? item.tags : [],
+    category: item.category || "Proyecto",
     link: item.link || "",
     accent: item.accent || "#f7cade",
     coverImage: item.coverImage || "",
@@ -67,6 +68,28 @@ function revealElements() {
   items.forEach((item) => observer.observe(item));
 }
 
+function setupDescriptionToggle(description, toggle, minLength) {
+  if (!description || !toggle) {
+    return;
+  }
+
+  const shouldCollapse = description.textContent.trim().length > minLength;
+  description.classList.toggle("is-collapsed", shouldCollapse);
+  toggle.hidden = !shouldCollapse;
+  toggle.textContent = "Ver mas";
+  toggle.setAttribute("aria-expanded", "false");
+
+  if (!shouldCollapse) {
+    return;
+  }
+
+  toggle.addEventListener("click", () => {
+    const isCollapsed = description.classList.toggle("is-collapsed");
+    toggle.textContent = isCollapsed ? "Ver mas" : "Ver menos";
+    toggle.setAttribute("aria-expanded", String(!isCollapsed));
+  });
+}
+
 async function init() {
   const params = new URLSearchParams(window.location.search);
   const projectId = params.get("id");
@@ -80,6 +103,7 @@ async function init() {
 
   const title = document.getElementById("detail-title");
   const description = document.getElementById("detail-description");
+  const descriptionToggle = document.getElementById("detail-description-toggle");
   const tags = document.getElementById("detail-tags");
   const cover = document.getElementById("detail-cover");
   const link = document.getElementById("detail-link");
@@ -88,6 +112,7 @@ async function init() {
   document.title = `${project.title} | Alphy`;
   title.textContent = project.title;
   description.textContent = project.description;
+  setupDescriptionToggle(description, descriptionToggle, 420);
   tags.innerHTML = "";
 
   project.tags.forEach((tag) => {

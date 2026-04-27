@@ -21,6 +21,7 @@ const elements = {
   projectTitle: document.getElementById("project-title"),
   projectDescription: document.getElementById("project-description"),
   projectTags: document.getElementById("project-tags"),
+  projectCategory: document.getElementById("project-category"),
   projectLink: document.getElementById("project-link"),
   projectCoverImage: document.getElementById("project-cover-image"),
   projectGallery: document.getElementById("project-gallery"),
@@ -39,6 +40,7 @@ function normalizeProjects(items) {
     title: item.title || "Proyecto sin nombre",
     description: item.description || "",
     tags: Array.isArray(item.tags) ? item.tags : [],
+    category: item.category || "Proyecto",
     link: item.link || "",
     accent: item.accent || "#f7cade",
     coverImage: item.coverImage || "",
@@ -117,6 +119,8 @@ function renderProjects() {
     const visual = cardNode.querySelector(".project-visual");
     const title = cardNode.querySelector("h3");
     const description = cardNode.querySelector(".project-description");
+    const descriptionToggle = cardNode.querySelector(".project-toggle");
+    const badge = cardNode.querySelector(".project-badge");
     const tags = cardNode.querySelector(".project-tags");
     const openLinks = cardNode.querySelectorAll(".project-open");
     const externalLink = cardNode.querySelector(".project-external");
@@ -129,7 +133,17 @@ function renderProjects() {
       visual.style.background = `linear-gradient(160deg, ${project.accent || "#f7cade"}, #ffffff)`;
     }
     title.textContent = project.title;
+    badge.textContent = project.category || "Proyecto";
     description.textContent = project.description;
+    description.classList.toggle("is-collapsed", project.description.length > 180);
+    descriptionToggle.hidden = project.description.length <= 180;
+    descriptionToggle.textContent = "Ver mas";
+    descriptionToggle.setAttribute("aria-expanded", "false");
+    descriptionToggle.addEventListener("click", () => {
+      const isCollapsed = description.classList.toggle("is-collapsed");
+      descriptionToggle.textContent = isCollapsed ? "Ver mas" : "Ver menos";
+      descriptionToggle.setAttribute("aria-expanded", String(!isCollapsed));
+    });
     tags.innerHTML = "";
 
     (project.tags || []).forEach((tag) => {
@@ -154,6 +168,8 @@ function renderProjects() {
     const itemNode = elements.itemTemplate.content.firstElementChild.cloneNode(true);
     itemNode.querySelector(".item-title").textContent = project.title;
     itemNode.querySelector(".item-description").textContent = project.description;
+    itemNode.querySelector(".item-up").addEventListener("click", () => moveProject(project.id, -1));
+    itemNode.querySelector(".item-down").addEventListener("click", () => moveProject(project.id, 1));
     itemNode.querySelector(".item-edit").addEventListener("click", () => fillForm(project.id));
     itemNode.querySelector(".item-delete").addEventListener("click", () => deleteProject(project.id));
     elements.projectList.appendChild(itemNode);
@@ -172,6 +188,7 @@ function fillForm(projectId) {
   elements.projectTitle.value = project.title;
   elements.projectDescription.value = project.description;
   elements.projectTags.value = (project.tags || []).join(", ");
+  elements.projectCategory.value = project.category || "";
   elements.projectLink.value = project.link || "";
   elements.projectCoverImage.value = project.coverImage || "";
   elements.projectGallery.value = (project.gallery || []).join("\n");
@@ -191,6 +208,23 @@ function deleteProject(projectId) {
   resetForm();
 }
 
+function moveProject(projectId, direction) {
+  const index = projects.findIndex((item) => item.id === projectId);
+  if (index < 0) {
+    return;
+  }
+
+  const nextIndex = index + direction;
+  if (nextIndex < 0 || nextIndex >= projects.length) {
+    return;
+  }
+
+  const [project] = projects.splice(index, 1);
+  projects.splice(nextIndex, 0, project);
+  saveProjects();
+  renderProjects();
+}
+
 function handleSubmit(event) {
   event.preventDefault();
 
@@ -202,6 +236,7 @@ function handleSubmit(event) {
       .split(",")
       .map((tag) => tag.trim())
       .filter(Boolean),
+    category: elements.projectCategory.value.trim() || "Proyecto",
     link: elements.projectLink.value.trim(),
     coverImage: elements.projectCoverImage.value.trim(),
     gallery: elements.projectGallery.value
@@ -253,6 +288,7 @@ function importProjects(event) {
         title: item.title || "Proyecto sin nombre",
         description: item.description || "",
         tags: Array.isArray(item.tags) ? item.tags : [],
+        category: item.category || "Proyecto",
         link: item.link || "",
         coverImage: item.coverImage || "",
         gallery: Array.isArray(item.gallery) ? item.gallery.filter(Boolean) : [],
