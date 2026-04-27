@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -171,11 +171,11 @@
         <form class="project-form" id="project-form">
           <input type="hidden" id="project-id" />
           <label>
-            Nombre
+            <span data-i18n="editor.name">Nombre</span>
             <input id="project-title" name="title" type="text" required />
           </label>
           <label>
-            Descripcion
+            <span data-i18n="editor.description">Descripcion</span>
             <textarea
               id="project-description"
               name="description"
@@ -184,7 +184,7 @@
             ></textarea>
           </label>
           <label>
-            Tags
+            <span data-i18n="editor.tags">Tags</span>
             <input
               id="project-tags"
               name="tags"
@@ -193,7 +193,7 @@
             />
           </label>
           <label>
-            Categoria
+            <span data-i18n="editor.category">Categoria</span>
             <input
               id="project-category"
               name="category"
@@ -202,7 +202,7 @@
             />
           </label>
           <label>
-            Link
+            <span data-i18n="editor.link">Link</span>
             <input
               id="project-link"
               name="link"
@@ -211,7 +211,7 @@
             />
           </label>
           <label>
-            Imagen principal
+            <span data-i18n="editor.cover">Imagen principal</span>
             <input
               id="project-cover-image"
               name="coverImage"
@@ -220,7 +220,7 @@
             />
           </label>
           <label>
-            Galeria de imagenes
+            <span data-i18n="editor.gallery">Galeria de imagenes</span>
             <textarea
               id="project-gallery"
               name="gallery"
@@ -229,7 +229,7 @@
             ></textarea>
           </label>
           <label>
-            Color de tarjeta
+            <span data-i18n="editor.accent">Color de tarjeta</span>
             <input
               id="project-accent"
               name="accent"
@@ -239,27 +239,23 @@
           </label>
 
           <div class="form-actions">
-            <button class="button primary" type="submit">Guardar</button>
+            <button class="button primary" type="submit" data-i18n="editor.save">Guardar</button>
             <button class="button ghost" type="button" id="reset-form">
-              Nuevo
+              <span data-i18n="editor.new">Nuevo</span>
             </button>
           </div>
         </form>
 
         <div class="drawer-tools">
-          <button class="button ghost" type="button" id="export-projects">
-            Exportar JSON
-          </button>
+          <button class="button ghost" type="button" id="export-projects" data-i18n="editor.export">Exportar JSON</button>
           <label class="button ghost upload-button" for="import-projects">
-            Importar JSON
+            <span data-i18n="editor.import">Importar JSON</span>
           </label>
           <input id="import-projects" type="file" accept=".json" hidden />
-          <button class="button ghost" type="button" id="reset-projects">
-            Restaurar ejemplo
-          </button>
+          <button class="button ghost" type="button" id="reset-projects" data-i18n="editor.reset">Restaurar ejemplo</button>
         </div>
 
-        <p class="editor-note">
+        <p class="editor-note" data-i18n="editor.note">
           El portfolio publico lee <code>projects.json</code>. Puedes editar
           aqui, exportar el JSON y luego reemplazar ese archivo en GitHub para
           publicar los cambios.

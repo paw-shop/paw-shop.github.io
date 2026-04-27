@@ -30,7 +30,21 @@ const translations = {
     "contact.note": "Espanol principal, ingles basico para comunicacion simple.",
     "editor.eyebrow": "Project Editor",
     "editor.title": "Editar proyectos",
-    "editor.close": "Cerrar"
+    "editor.close": "Cerrar",
+    "editor.name": "Nombre",
+    "editor.description": "Descripcion",
+    "editor.tags": "Tags",
+    "editor.category": "Categoria",
+    "editor.link": "Link",
+    "editor.cover": "Imagen principal",
+    "editor.gallery": "Galeria de imagenes",
+    "editor.accent": "Color de tarjeta",
+    "editor.save": "Guardar",
+    "editor.new": "Nuevo",
+    "editor.export": "Exportar JSON",
+    "editor.import": "Importar JSON",
+    "editor.reset": "Restaurar ejemplo",
+    "editor.note": "El portfolio publico lee <code>projects.json</code>. Puedes editar aqui, exportar el JSON y luego reemplazar ese archivo en GitHub para publicar los cambios."
   },
   en: {
     "nav.projects": "Projects",
@@ -60,7 +74,21 @@ const translations = {
     "contact.note": "Spanish first, basic English for simple communication.",
     "editor.eyebrow": "Project Editor",
     "editor.title": "Edit projects",
-    "editor.close": "Close"
+    "editor.close": "Close",
+    "editor.name": "Name",
+    "editor.description": "Description",
+    "editor.tags": "Tags",
+    "editor.category": "Category",
+    "editor.link": "Link",
+    "editor.cover": "Cover image",
+    "editor.gallery": "Image gallery",
+    "editor.accent": "Card color",
+    "editor.save": "Save",
+    "editor.new": "New",
+    "editor.export": "Export JSON",
+    "editor.import": "Import JSON",
+    "editor.reset": "Restore sample",
+    "editor.note": "The public portfolio reads <code>projects.json</code>. You can edit here, export the JSON, and then replace that file on GitHub to publish your changes."
   }
 };
 
@@ -93,7 +121,7 @@ const elements = {
 };
 
 let projects = [];
-let currentLanguage = localStorage.getItem(LANGUAGE_KEY) || "es";
+let currentLanguage = localStorage.getItem(LANGUAGE_KEY) || "en";
 
 function normalizeProjects(items) {
   if (!Array.isArray(items)) {
