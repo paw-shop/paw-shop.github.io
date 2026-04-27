@@ -1,5 +1,48 @@
 [
   {
+    "id": "c98f47bd-7886-4e5a-972b-5602cc236806",
+    "title": "SnowFox set For Deira",
+    "description": "Stylized Casual Set - VRChat / Anime Style\n\nStylized female outfit designed for anime and VR-style characters, suitable for VRChat avatars and general 3D rendering.\n\nThis outfit features a clean, minimal crop top with a high-neck design and soft blue trim accents that frame the chest and neckline, creating a fresh and modern look. The top is designed to sit snugly on the torso, emphasizing a smooth and stylized silhouette.\n\nThe set is completed with low-rise shorts featuring matching blue accents, belt details, and functional-style seams that add a casual yet polished aesthetic. The overall design feels light, cute, and contemporary, making it ideal for everyday avatar use while maintaining an anime-inspired style.\n\nPerfect for stylized avatars, casual renders, showcases, and customizable character models.\n\nCharacter body shown is for preview purposes only and is not included.\n\nTechnical Details\n\nCompatible with the Deira base\n\nDeira base model is not included\n\nNo blendshapes included\n\nOptimized for VRChat / Unity / Blender\n\nOriginal design by Korura Club",
+    "tags": [
+      "Blender",
+      "Vrchat",
+      "Clothes",
+      "Unity",
+      "Bodysuit"
+    ],
+    "category": "Outfit",
+    "link": "https://alphfem.gumroad.com/l/SnowFoxset",
+    "coverImage": "./images/project-5/proyect5.1.jpg",
+    "gallery": [
+      "./images/project-5/proyect5.1.jpg",
+      "./images/project-5/proyect5.2.jpg",
+      "./images/project-5/proyect5.3.jpg"
+    ],
+    "accent": "#f7cade"
+  },
+  {
+    "id": "bc0d87d8-76ae-43c8-bdef-16caaf2682ba",
+    "title": "Kitten Set Cute For Deira",
+    "description": "Cute / kawaii style clothing set, designed specifically for the Deira body base.\n\nIncludes a short bandeau-style top in black with a cute cat face design on the front, complemented by thin straps that give it a delicate and stylish look. The bottom piece is a simple black underwear-style garment, featuring a decorative paw print on the back and cat ears on the front, maintaining an adorable overall aesthetic.\n\nThe mesh is highly optimized, with 2,347 vertices, making it ideal for use in VRChat and other real-time environments. The object includes only the clothing; the body base is not included.\n\nIt does not contain blendshapes, allowing for a clean and flexible workflow for adjustments or customization.\n\nDependencies\n\nPoiyomi toon shader",
+    "tags": [
+      "Blender",
+      "Vrchat",
+      "Clothes",
+      "Unity",
+      "Bodysuit"
+    ],
+    "category": "Outfit",
+    "link": "https://alphfem.gumroad.com/l/CatSet",
+    "coverImage": "./images/project-1/proyect1.1.jpg",
+    "gallery": [
+      "./images/project-1/proyect1.1.jpg",
+      "./images/project-1/proyect1.2.jpg",
+      "./images/project-1/proyect1.3.jpg",
+      "./images/project-1/proyect1.4.jpg"
+    ],
+    "accent": "#f7d7e4"
+  },
+  {
     "id": "930ddc7f-38ad-4800-ac03-2b31881fedfe",
     "title": "Demon Suit Deira",
     "description": "Stylized Bat Outfit - VRChat / Anime Style\n\nStylized female outfit designed for anime and VR-style characters, suitable for VRChat avatars and general 3D rendering.\n\nThis outfit features a sleek, glossy black bodysuit with a form-fitting silhouette and sharp, wing-inspired seam details on the chest. A heart-shaped semi-transparent mesh panel at the torso adds a cute yet edgy focal point. Oversized bat-wing-style sleeves with a reflective finish give the design a bold gothic and vampiric aesthetic, while a matching choker with a central jewel completes the look.\n\nPerfect for stylized avatars, renders, showcases, and customizable character models.\n\nCharacter body shown is for preview purposes only and is not included.\n\nTechnical Details\n\n6826 vertices\n\nCompatible with the Deira base\n\nDeira base model is not included\n\nNo blendshapes included\n\nOptimized for VRChat / Unity / Blender",
@@ -43,9 +86,9 @@
     "accent": "#f7cade"
   },
   {
-    "id": "bc0d87d8-76ae-43c8-bdef-16caaf2682ba",
-    "title": "Kitten Set Cute For Deira",
-    "description": "Cute / kawaii style clothing set, designed specifically for the Deira body base.\n\nIncludes a short bandeau-style top in black with a cute cat face design on the front, complemented by thin straps that give it a delicate and stylish look. The bottom piece is a simple black underwear-style garment, featuring a decorative paw print on the back and cat ears on the front, maintaining an adorable overall aesthetic.\n\nThe mesh is highly optimized, with 2,347 vertices, making it ideal for use in VRChat and other real-time environments. The object includes only the clothing; the body base is not included.\n\nIt does not contain blendshapes, allowing for a clean and flexible workflow for adjustments or customization.\n\nDependencies\n\nPoiyomi toon shader",
+    "id": "5ccb7f98-3205-46fd-bf9a-0c757c53dbe8",
+    "title": "Kitty Suit For Deira",
+    "description": "Stylized Cat Bodysuit - VRChat / Anime Style\n\nStylized female outfit designed for anime and VR-style characters, suitable for VRChat avatars and general 3D rendering.\n\nThis outfit features a sleek, form-fitting black bodysuit with soft pink trim accents that highlight the silhouette. The upper design includes delicate strap details across the chest, adding a subtle and elegant touch while maintaining a clean, stylized anime look.\n\nA cute cat-themed detail is placed at the front of the bodysuit, adding a playful and charming contrast to the minimal, modern design. The overall shape is smooth and streamlined, balancing a cute aesthetic with a slightly provocative feel.\n\nIdeal for stylized avatars, renders, showcases, and customizable character models.\n\nCharacter body shown is for preview purposes only and is not included.\n\nTechnical Details\n\nCompatible with the Deira base\n\nDeira base model is not included\n\nNo blendshapes included\n\nOptimized for VRChat / Unity / Blender\n\n8258 vertices (suit)\n\nOriginal design by Korura Club",
     "tags": [
       "Blender",
       "Vrchat",
@@ -54,14 +97,29 @@
       "Bodysuit"
     ],
     "category": "Outfit",
-    "link": "https://alphfem.gumroad.com/l/CatSet",
-    "coverImage": "./images/project-1/proyect1.1.jpg",
+    "link": "https://alphfem.gumroad.com/l/BodyCatSuit",
+    "coverImage": "./images/project-4/proyect4.1.jpg",
     "gallery": [
-      "./images/project-1/proyect1.1.jpg",
-      "./images/project-1/proyect1.2.jpg",
-      "./images/project-1/proyect1.3.jpg",
-      "./images/project-1/proyect1.4.jpg"
+      "./images/project-4/proyect4.1.jpg",
+      "./images/project-4/proyect4.2.jpg",
+      "./images/project-4/proyect4.3.jpg"
     ],
-    "accent": "#f7d7e4"
+    "accent": "#f7cade"
+  },
+  {
+    "id": "d8743ced-876c-4e22-bd69-6f8844e91b73",
+    "title": "SK Manager (ShapeKey Transfer & Mixer)",
+    "description": "SK Manager is a production-focused tool for Blender designed to streamline work with shape keys. It enables precise transfer of blendshapes between meshes with identical topology using vertex delta data, avoiding common issues found in traditional methods. It also includes a mixing system that allows multiple shape keys to be combined into a single one, with full control over each shape's influence, making it easy to create complex expressions or optimize rigs. Built for speed, consistency, and non-destructive workflows, it is a practical solution for artists working with characters, avatars, and animation.",
+    "tags": [
+      "Blender",
+      "Assets"
+    ],
+    "category": "Blender Asset",
+    "link": "https://alphfem.gumroad.com/l/BodyCatSuit",
+    "coverImage": "./images/project-6/proyect6.1.jpg",
+    "gallery": [
+      "./images/project-6/proyect6.1.jpg"
+    ],
+    "accent": "#f7cade"
   }
 ]
