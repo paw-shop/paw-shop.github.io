@@ -197,10 +197,19 @@
             />
           </label>
           <label>
-            <span data-i18n="editor.link">Link</span>
+            <span data-i18n="editor.gumroad">Gumroad</span>
             <input
-              id="project-link"
-              name="link"
+              id="project-gumroad-link"
+              name="gumroadLink"
+              type="url"
+              placeholder="https://..."
+            />
+          </label>
+          <label>
+            <span data-i18n="editor.booth">Booth</span>
+            <input
+              id="project-booth-link"
+              name="boothLink"
               type="url"
               placeholder="https://..."
             />
@@ -272,8 +281,13 @@
           <div class="project-tags"></div>
           <div class="project-links">
             <a class="project-link project-open" href="#">Open project</a>
-            <a class="project-link project-external" target="_blank" rel="noreferrer">
-              External link
+            <a class="project-link project-gumroad" target="_blank" rel="noreferrer">
+              <span class="store-mark store-mark-gumroad" aria-hidden="true">G</span>
+              <span>Gumroad</span>
+            </a>
+            <a class="project-link project-booth" target="_blank" rel="noreferrer">
+              <span class="store-mark store-mark-booth" aria-hidden="true">B</span>
+              <span>Booth</span>
             </a>
           </div>
         </div>

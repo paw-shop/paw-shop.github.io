@@ -7,7 +7,8 @@ const translations = {
     "nav.about": "Sobre mi",
     "nav.contact": "Contacto",
     "detail.eyebrow": "Project Detail",
-    "detail.link": "Ver link del proyecto",
+    "detail.gumroad": "Ver Gumroad",
+    "detail.booth": "Ver Booth",
     "detail.back": "Volver",
     "detail.galleryEyebrow": "Gallery",
     "detail.galleryTitle": "Imagenes del proyecto"
@@ -17,13 +18,14 @@ const translations = {
     "nav.about": "About",
     "nav.contact": "Contact",
     "detail.eyebrow": "Project Detail",
-    "detail.link": "View project link",
+    "detail.gumroad": "View Gumroad",
+    "detail.booth": "View Booth",
     "detail.back": "Back",
     "detail.galleryEyebrow": "Gallery",
     "detail.galleryTitle": "Project images"
   }
 };
-let currentLanguage = localStorage.getItem(LANGUAGE_KEY) || "es";
+let currentLanguage = localStorage.getItem(LANGUAGE_KEY) || "en";
 
 function normalizeProjects(items) {
   if (!Array.isArray(items)) {
@@ -36,7 +38,8 @@ function normalizeProjects(items) {
     description: item.description || "",
     tags: Array.isArray(item.tags) ? item.tags : [],
     category: item.category || "Proyecto",
-    link: item.link || "",
+    gumroadLink: item.gumroadLink || item.link || "",
+    boothLink: item.boothLink || "",
     accent: item.accent || "#f7cade",
     coverImage: item.coverImage || "",
     gallery: Array.isArray(item.gallery) ? item.gallery.filter(Boolean) : [],
@@ -159,7 +162,8 @@ async function init() {
   const descriptionToggle = document.getElementById("detail-description-toggle");
   const tags = document.getElementById("detail-tags");
   const cover = document.getElementById("detail-cover");
-  const link = document.getElementById("detail-link");
+  const gumroadLink = document.getElementById("detail-gumroad-link");
+  const boothLink = document.getElementById("detail-booth-link");
   const gallery = document.getElementById("detail-gallery");
   const langToggle = document.getElementById("lang-toggle");
 
@@ -179,11 +183,18 @@ async function init() {
     tags.appendChild(chip);
   });
 
-  if (project.link) {
-    link.href = project.link;
-    link.hidden = false;
+  if (project.gumroadLink) {
+    gumroadLink.href = project.gumroadLink;
+    gumroadLink.hidden = false;
   } else {
-    link.hidden = true;
+    gumroadLink.hidden = true;
+  }
+
+  if (project.boothLink) {
+    boothLink.href = project.boothLink;
+    boothLink.hidden = false;
+  } else {
+    boothLink.hidden = true;
   }
 
   if (project.coverImage) {

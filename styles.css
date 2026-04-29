@@ -398,12 +398,37 @@ textarea {
   margin-top: 4px;
   color: #8c5671;
   font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .project-links {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+}
+
+.store-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.store-mark-gumroad {
+  background: linear-gradient(135deg, #ff8a5b, #ff4d8d);
+  color: #ffffff;
+}
+
+.store-mark-booth {
+  background: linear-gradient(135deg, #5c85ff, #7a5cff);
+  color: #ffffff;
 }
 
 .project-description,

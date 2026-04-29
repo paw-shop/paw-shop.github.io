@@ -11,7 +11,8 @@
       "Bodysuit"
     ],
     "category": "Outfit",
-    "link": "https://alphfem.gumroad.com/l/SnowFoxset",
+    "gumroadLink": "https://alphfem.gumroad.com/l/SnowFoxset",
+    "boothLink": "",
     "coverImage": "./images/project-5/proyect5.1.jpg",
     "gallery": [
       "./images/project-5/proyect5.1.jpg",
@@ -32,7 +33,8 @@
       "Bodysuit"
     ],
     "category": "Outfit",
-    "link": "https://alphfem.gumroad.com/l/CatSet",
+    "gumroadLink": "https://alphfem.gumroad.com/l/CatSet",
+    "boothLink": "",
     "coverImage": "./images/project-1/proyect1.1.jpg",
     "gallery": [
       "./images/project-1/proyect1.1.jpg",
@@ -54,7 +56,8 @@
       "Bodysuit"
     ],
     "category": "Outfit",
-    "link": "https://alphfem.gumroad.com/l/DemonDeiraSuit",
+    "gumroadLink": "https://alphfem.gumroad.com/l/DemonDeiraSuit",
+    "boothLink": "",
     "coverImage": "./images/project-3/proyect3.1.jpg",
     "gallery": [
       "./images/project-3/proyect3.1.jpg",
@@ -76,7 +79,8 @@
       "Bodysuit"
     ],
     "category": "Outfit",
-    "link": "https://alphfem.gumroad.com/l/bunnyDeira",
+    "gumroadLink": "https://alphfem.gumroad.com/l/bunnyDeira",
+    "boothLink": "",
     "coverImage": "./images/project-2/proyect2.1.jpg",
     "gallery": [
       "./images/project-2/proyect2.1.jpg",
@@ -97,7 +101,8 @@
       "Bodysuit"
     ],
     "category": "Outfit",
-    "link": "https://alphfem.gumroad.com/l/BodyCatSuit",
+    "gumroadLink": "https://alphfem.gumroad.com/l/BodyCatSuit",
+    "boothLink": "",
     "coverImage": "./images/project-4/proyect4.1.jpg",
     "gallery": [
       "./images/project-4/proyect4.1.jpg",
@@ -115,7 +120,8 @@
       "Assets"
     ],
     "category": "Blender Asset",
-    "link": "https://alphfem.gumroad.com/l/SKManager",
+    "gumroadLink": "https://alphfem.gumroad.com/l/BodyCatSuit",
+    "boothLink": "",
     "coverImage": "./images/project-6/proyect6.1.jpg",
     "gallery": [
       "./images/project-6/proyect6.1.jpg"

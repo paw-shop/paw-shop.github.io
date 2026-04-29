@@ -35,7 +35,8 @@ const translations = {
     "editor.description": "Descripcion",
     "editor.tags": "Tags",
     "editor.category": "Categoria",
-    "editor.link": "Link",
+    "editor.gumroad": "Gumroad",
+    "editor.booth": "Booth",
     "editor.cover": "Imagen principal",
     "editor.gallery": "Galeria de imagenes",
     "editor.accent": "Color de tarjeta",
@@ -78,7 +79,8 @@ const translations = {
     "editor.description": "Description",
     "editor.tags": "Tags",
     "editor.category": "Category",
-    "editor.link": "Link",
+    "editor.gumroad": "Gumroad",
+    "editor.booth": "Booth",
     "editor.cover": "Cover image",
     "editor.gallery": "Image gallery",
     "editor.accent": "Card color",
@@ -112,7 +114,8 @@ const elements = {
   projectDescription: document.getElementById("project-description"),
   projectTags: document.getElementById("project-tags"),
   projectCategory: document.getElementById("project-category"),
-  projectLink: document.getElementById("project-link"),
+  projectGumroadLink: document.getElementById("project-gumroad-link"),
+  projectBoothLink: document.getElementById("project-booth-link"),
   projectCoverImage: document.getElementById("project-cover-image"),
   projectGallery: document.getElementById("project-gallery"),
   projectAccent: document.getElementById("project-accent"),
@@ -134,7 +137,8 @@ function normalizeProjects(items) {
     description: item.description || "",
     tags: Array.isArray(item.tags) ? item.tags : [],
     category: item.category || "Proyecto",
-    link: item.link || "",
+    gumroadLink: item.gumroadLink || item.link || "",
+    boothLink: item.boothLink || "",
     accent: item.accent || "#f7cade",
     coverImage: item.coverImage || "",
     gallery: Array.isArray(item.gallery) ? item.gallery.filter(Boolean) : [],
@@ -205,8 +209,12 @@ function applyLanguage(language) {
     }
   });
 
-  document.querySelectorAll(".project-external").forEach((link) => {
-    link.textContent = currentLanguage === "es" ? "Link externo" : "External link";
+  document.querySelectorAll(".project-gumroad").forEach((link) => {
+    link.textContent = "Gumroad";
+  });
+
+  document.querySelectorAll(".project-booth").forEach((link) => {
+    link.textContent = "Booth";
   });
 
   document.querySelectorAll(".project-toggle").forEach((button) => {
@@ -274,7 +282,8 @@ function renderProjects() {
     const badge = cardNode.querySelector(".project-badge");
     const tags = cardNode.querySelector(".project-tags");
     const openLinks = cardNode.querySelectorAll(".project-open");
-    const externalLink = cardNode.querySelector(".project-external");
+    const gumroadLink = cardNode.querySelector(".project-gumroad");
+    const boothLink = cardNode.querySelector(".project-booth");
 
     if (project.coverImage) {
       visual.style.backgroundImage = `linear-gradient(rgba(255, 236, 243, 0.15), rgba(255, 236, 243, 0.15)), url("${project.coverImage}")`;
@@ -309,11 +318,18 @@ function renderProjects() {
       link.href = `./project.html?id=${encodeURIComponent(project.id)}`;
     });
 
-    if (project.link) {
-      externalLink.href = project.link;
-      externalLink.hidden = false;
+    if (project.gumroadLink) {
+      gumroadLink.href = project.gumroadLink;
+      gumroadLink.hidden = false;
     } else {
-      externalLink.hidden = true;
+      gumroadLink.hidden = true;
+    }
+
+    if (project.boothLink) {
+      boothLink.href = project.boothLink;
+      boothLink.hidden = false;
+    } else {
+      boothLink.hidden = true;
     }
 
     elements.projectsGrid.appendChild(cardNode);
@@ -351,7 +367,8 @@ function fillForm(projectId) {
   elements.projectDescription.value = project.description;
   elements.projectTags.value = (project.tags || []).join(", ");
   elements.projectCategory.value = project.category || "";
-  elements.projectLink.value = project.link || "";
+  elements.projectGumroadLink.value = project.gumroadLink || "";
+  elements.projectBoothLink.value = project.boothLink || "";
   elements.projectCoverImage.value = project.coverImage || "";
   elements.projectGallery.value = (project.gallery || []).join("\n");
   elements.projectAccent.value = project.accent || "";
@@ -399,7 +416,8 @@ function handleSubmit(event) {
       .map((tag) => tag.trim())
       .filter(Boolean),
     category: elements.projectCategory.value.trim() || "Proyecto",
-    link: elements.projectLink.value.trim(),
+    gumroadLink: elements.projectGumroadLink.value.trim(),
+    boothLink: elements.projectBoothLink.value.trim(),
     coverImage: elements.projectCoverImage.value.trim(),
     gallery: elements.projectGallery.value
       .split("\n")
@@ -451,7 +469,8 @@ function importProjects(event) {
         description: item.description || "",
         tags: Array.isArray(item.tags) ? item.tags : [],
         category: item.category || "Proyecto",
-        link: item.link || "",
+        gumroadLink: item.gumroadLink || item.link || "",
+        boothLink: item.boothLink || "",
         coverImage: item.coverImage || "",
         gallery: Array.isArray(item.gallery) ? item.gallery.filter(Boolean) : [],
         accent: item.accent || "#f7cade",
