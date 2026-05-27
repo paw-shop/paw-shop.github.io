@@ -43,7 +43,7 @@ GitHub Pages publicara la nueva version automaticamente.
 
 Usa la carpeta `images/`.
 
-- [images/README.md](C:/Users/juanz/Downloads/alphy-portfolio/images/README.md)
+- [images/README.md](C:/Users/juanz/Downloads/alphy-portfolio-main/images/README.md)
 - `images/project-1/`
 - `images/project-2/`
 - `images/project-3/`
