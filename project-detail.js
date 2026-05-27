@@ -5,6 +5,7 @@ const translations = {
   es: {
     "nav.projects": "Proyectos",
     "nav.about": "Sobre mi",
+    "nav.announcements": "Comunicados",
     "nav.contact": "Contacto",
     "detail.eyebrow": "Project Detail",
     "detail.gumroad": "Gumroad",
@@ -16,6 +17,7 @@ const translations = {
   en: {
     "nav.projects": "Projects",
     "nav.about": "About",
+    "nav.announcements": "Announcements",
     "nav.contact": "Contact",
     "detail.eyebrow": "Project Detail",
     "detail.gumroad": "Gumroad",

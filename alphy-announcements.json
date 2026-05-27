@@ -1,0 +1,83 @@
+[
+  {
+    "id": "493f2d78-ebc4-42ea-83aa-ea556b4b733b",
+    "type": "primary",
+    "meta": "FREE",
+    "headline": "Free custom clothes for any VRChat avatar",
+    "body": "Open call for a clothing commission for any VRChat avatar, limited spots",
+    "image": "",
+    "progress": "0/10",
+    "showProgress": true,
+    "progressLabel": "Free Commissions",
+    "links": [
+      {
+        "label": "contact",
+        "url": "https://www.instagram.com/alfhfemboy/"
+      }
+    ],
+    "accent": "#f7cade",
+    "localized": {
+      "es": {
+        "meta": "GRATIS",
+        "headline": "Ropa personalizada gratis para cualquier avatar de VRChat",
+        "body": "Convocatoria abierta para una comisión de ropa para cualquier avatar de VRChat, plazas limitadas",
+        "progressLabel": "Free Commissions",
+        "progress": "0/10",
+        "showProgress": true,
+        "links": [
+          {
+            "label": "contacto",
+            "url": "https://www.instagram.com/alfhfemboy/"
+          }
+        ]
+      },
+      "en": {
+        "meta": "FREE",
+        "headline": "Free custom clothes for any VRChat avatar",
+        "body": "Open call for a clothing commission for any VRChat avatar, limited spots",
+        "progressLabel": "Free Commissions",
+        "progress": "0/10",
+        "showProgress": true,
+        "links": [
+          {
+            "label": "contact",
+            "url": "https://www.instagram.com/alfhfemboy/"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "announcement-2",
+    "type": "secondary",
+    "meta": "En busca activa de comisiones",
+    "headline": "Portafolio en crecimiento",
+    "body": "Se iran sumando nuevas piezas, versiones y galerias conforme salgan trabajos recientes.",
+    "image": "",
+    "progress": "",
+    "showProgress": false,
+    "progressLabel": "Progreso",
+    "links": [],
+    "accent": "#f7cade",
+    "localized": {
+      "es": {
+        "meta": "En busca activa de comisiones",
+        "headline": "Portafolio en crecimiento",
+        "body": "Se iran sumando nuevas piezas, versiones y galerias conforme salgan trabajos recientes.",
+        "progressLabel": "Progreso",
+        "progress": "",
+        "showProgress": false,
+        "links": []
+      },
+      "en": {
+        "meta": "ACTIVE COMMISSION SEARCH",
+        "headline": "Portfolio growing",
+        "body": "New pieces, versions, and galleries will keep being added as recent work comes in.",
+        "progressLabel": "Progress",
+        "progress": "",
+        "showProgress": false,
+        "links": []
+      }
+    }
+  }
+]
