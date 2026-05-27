@@ -121,7 +121,7 @@ const translations = {
     "window.announcements": "Announcements.exe",
     "window.contact": "Contact.exe",
     "about.eyebrow": "About",
-    "about.title": "Alphy, modeling with visual sensitivity",
+    "about.title": "Modeling with visual sensitivity",
     "about.bodyOne": "I focus on creating digital assets with personality, taking care of silhouette, materials, and the final readability of each piece. I look for a balance between style, detail, and optimization so every model keeps its visual impact in real-time use.",
     "about.bodyTwo": "My work blends a soft art direction with technical decisions made for production, presentation, and interactive use.",
     "presentation.statOneLabel": "Focus",
