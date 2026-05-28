@@ -2,26 +2,46 @@
   "updatedAt": "2026-05-27",
   "localized": {
     "es": {
-      "title": "Términos y condiciones",
-      "intro": "Al usar este portfolio aceptas las reglas básicas de uso, atribución y comunicación del material publicado aquí.",
+      "title": "CONDICIONES DE USO",
+      "intro": "Esta página y todo el contenido asociado a ella existen para compartir obras de arte, activos de avatar, comisiones, proyectos y recursos relacionados con VRChat, Blender y Unity.\n\nAl acceder, descargar o utilizar cualquier material proporcionado a través de esta página, el usuario acepta automáticamente todos los términos y condiciones que se enumeran a continuación.Todos los activos, modelos, texturas, renders y contenido publicado siguen siendo propiedad intelectual del creador, a menos que se indique explícitamente lo contrario.",
       "points": [
-        "Las imágenes, renders y textos mostrados en este sitio pertenecen a sus respectivos autores o a Pawshop/Alphy según corresponda.",
-        "No reutilices, redistribuyas ni vendas el contenido sin permiso expreso.",
-        "Si haces una comisión o pedido, los plazos, entregas y revisiones se acuerdan por separado antes de iniciar el trabajo.",
-        "Los enlaces externos pueden cambiar o dejar de funcionar sin previo aviso."
+        "Los activos y materiales gratuitos se proporcionan solo para uso personal y no comercial",
+        "El uso comercial está estrictamente prohibido sin el permiso explícito del creador",
+        "Los usuarios no pueden revender, redistribuir comercialmente o monetizar cualquier material proporcionado",
+        "Queda prohibida la modificación de activos con fines de reventa, redistribución o comerciales",
+        "Está prohibido reclamar la propiedad o autoría de cualquier activo, modelo, textura o proyecto",
+        "Está prohibido volver a subir contenido de pago, privado o restringido",
+        "Está prohibida la filtración de archivos de comisiones, archivos fuente o activos privados",
+        "Está prohibido el uso de cualquier material para mercados, tiendas de activos o paquetes de avatares comerciales sin permiso",
+        "El creador se reserva el derecho de revocar el acceso o los permisos en cualquier momento",
+        "El creador puede actualizar, eliminar o modificar el contenido sin previo aviso",
+        "Las representaciones de cartera, las vistas previas, los WIP y los proyectos publicados pueden no representar productos finales",
+        "Los usuarios son responsables de acreditar correctamente al creador cuando sea necesario",
+        "El acoso, el spam, la suplantación de identidad o el uso indebido de la página/contenido pueden dar lugar a una lista negra o a la eliminación",
+        "Cualquier violación de estos términos puede resultar en informes de derechos de autor, solicitudes de eliminación o restricción permanente de servicios futuros"
       ],
-      "closing": "Si necesitas aclarar algo, escribe antes de usar el material o de iniciar una comisión."
+      "closing": "Al continuar accediendo, utilizando o descargando material de esta página, el usuario confirma que ha leído, entendido y aceptado todos los términos y condiciones enumerados anteriormente."
     },
     "en": {
-      "title": "Terms and conditions",
-      "intro": "By using this portfolio you agree to the basic rules for use, attribution, and communication around the material published here.",
+      "title": "TERMS & CONDITIONS",
+      "intro": "This page and all content associated with it exist for sharing artwork, avatar assets, commissions, projects and resources related to VRChat, Blender and Unity.\n\nBy accessing, downloading or using any material provided through this page, the user automatically agrees to all terms and conditions listed below.\n\nAll assets, models, textures, renders and published content remain the intellectual property of the creator unless explicitly stated otherwise.",
       "points": [
-        "Images, renders, and text shown on this site belong to their respective authors or to Pawshop/Alphy as applicable.",
-        "Do not reuse, redistribute, or sell the content without explicit permission.",
-        "If you place a commission or request, timelines, deliverables, and revisions are agreed separately before work begins.",
-        "External links may change or stop working without prior notice."
+        "Free assets and materials are provided for personal and non-commercial use only",
+        "Commercial use is strictly prohibited without explicit permission from the creator",
+        "Users may not resell, redistribute commercially or monetize any provided material",
+        "Modification of assets for resale, redistribution or commercial purposes is prohibited",
+        "Claiming ownership or authorship of any asset, model, texture or project is prohibited",
+        "Reuploads of paid, private or restricted content are prohibited",
+        "Leaking commission files, source files or private assets is prohibited",
+        "Use of any material for marketplaces, asset stores or commercial avatar packages without permission is prohibited",
+        "The creator reserves the right to revoke access or permissions at any time",
+        "The creator may update, remove or modify content without notice",
+        "Portfolio renders, previews, WIPs and posted projects may not represent final products",
+        "Users are responsible for properly crediting the creator when required",
+        "Harassment, spam, impersonation or misuse of the page/content may result in blacklist or removal",
+        "Any violation of these terms may result in copyright reports, takedown requests or permanent restriction from future services"
       ],
-      "closing": "If anything is unclear, please ask before using the material or starting a commission."
+      "closing": "By continuing to access, use or download material from this page, the user confirms that they have read, understood and accepted all terms and conditions listed above."
     }
   }
 }
