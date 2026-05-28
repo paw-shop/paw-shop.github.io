@@ -1,0 +1,33 @@
+{
+  "updatedAt": "2026-05-27",
+  "localized": {
+    "es": {
+      "title": "Términos del comunicado principal",
+      "intro": "Este comunicado principal incluye condiciones de uso separadas de los términos generales del sitio.\n\nAplica solo al anuncio destacado de comisiones gratuitas.\n\nLee el texto completo antes de pedir una comisión.",
+      "points": [
+        "La disponibilidad es limitada y no garantiza aceptación.",
+        "El artista puede aceptar o rechazar solicitudes y referencias.",
+        "Los plazos pueden variar según complejidad, disponibilidad y carga de trabajo.",
+        "Las revisiones son limitadas y se pueden rechazar cambios excesivos.",
+        "El trabajo sigue siendo propiedad intelectual del artista y solo concede uso personal no exclusivo.",
+        "El artista puede publicar renders, WIPs y vistas previas en portafolio o redes.",
+        "El acoso, el spam o la presión excesiva pueden terminar en cancelación o bloqueo."
+      ],
+      "closing": "Si quieres reutilizar o compartir esta información, revisa primero el comunicado completo."
+    },
+    "en": {
+      "title": "Primary announcement terms",
+      "intro": "This featured announcement includes usage conditions that are separate from the general site terms.\n\nIt only applies to the highlighted free commission announcement.\n\nPlease read the full text before requesting a commission.",
+      "points": [
+        "Availability is limited and acceptance is not guaranteed.",
+        "The artist may accept or reject requests and references.",
+        "Timelines can vary depending on complexity, availability, and workload.",
+        "Revisions are limited and excessive changes may be rejected.",
+        "The work remains the artist's intellectual property and only grants a personal, non-exclusive usage license.",
+        "The artist may post renders, WIPs, and previews in a portfolio or on social media.",
+        "Harassment, spam, or excessive pressure may result in cancellation or blocking."
+      ],
+      "closing": "If you want to reuse or share this information, review the full announcement first."
+    }
+  }
+}

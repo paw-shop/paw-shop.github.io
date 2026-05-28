@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminos y condiciones | Pawshop</title>
+    <meta
+      name="description"
+      content="Terminos y condiciones del portfolio de Pawshop."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=21" />
+  </head>
+  <body>
+    <div class="page-shell terms-shell">
+      <header class="topbar">
+        <a class="brand" href="./index.html">Pawshop</a>
+        <nav class="nav">
+          <a href="./index.html#proyectos" data-i18n="nav.projects">Proyectos</a>
+          <a href="./index.html#sobre-mi" data-i18n="nav.about">Sobre mi</a>
+          <a href="./index.html#comunicados" data-i18n="nav.announcements">Comunicados</a>
+          <a href="./index.html#contacto" data-i18n="nav.contact">Contacto</a>
+          <button class="lang-toggle" type="button" id="lang-toggle" aria-label="Cambiar idioma">
+            <span data-lang-option="es">ES</span>
+            <span data-lang-option="en">EN</span>
+          </button>
+        </nav>
+      </header>
+
+      <main class="terms-main">
+        <section class="terms-hero reveal">
+          <p class="eyebrow" data-i18n="terms.eyebrow">Documentos</p>
+          <h1 id="terms-title">Terminos y condiciones</h1>
+          <p class="terms-updated">
+            <span data-i18n="terms.updated">Ultima actualizacion</span>
+            <strong id="terms-updated-at">2026-05-27</strong>
+          </p>
+        </section>
+
+        <section class="terms-card window-shell reveal">
+          <div class="window-header">
+            <div class="window-controls" aria-hidden="true">
+              <span class="control control-close"></span>
+              <span class="control control-minimize"></span>
+              <span class="control control-expand"></span>
+            </div>
+            <p class="window-title" data-i18n="terms.window">Terminos.exe</p>
+          </div>
+          <div class="window-body terms-body">
+            <p id="terms-intro" class="terms-intro"></p>
+            <div class="terms-section">
+              <p class="eyebrow" data-i18n="terms.points">Puntos clave</p>
+              <ul id="terms-points" class="terms-points"></ul>
+            </div>
+            <div class="terms-section">
+              <p class="eyebrow" data-i18n="terms.closing">Cierre</p>
+              <p id="terms-closing" class="terms-closing"></p>
+            </div>
+            <div class="terms-actions">
+              <a class="button primary" href="./index.html" data-i18n="terms.back">Volver al portfolio</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-footer-copy">
+          <p class="site-footer-brand">Pawshop</p>
+          <p class="site-footer-note">Alphy / 3D artist portfolio</p>
+        </div>
+        <div class="site-footer-links">
+          <a href="./index.html" data-i18n="terms.home">Volver al inicio</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./terms.js?v=2"></script>
+  </body>
+</html>

@@ -7,30 +7,17 @@
     "body": "Open call for a clothing commission for any VRChat avatar, limited spots",
     "image": "",
     "progress": "0/10",
-    "showProgress": true,
     "progressLabel": "Free Commissions",
+    "showProgress": true,
+    "showTermsLink": true,
     "links": [
       {
-        "label": "contact",
+        "label": "CLICK ME!",
         "url": "https://www.instagram.com/alfhfemboy/"
       }
     ],
     "accent": "#f7cade",
     "localized": {
-      "es": {
-        "meta": "GRATIS",
-        "headline": "Ropa personalizada gratis para cualquier avatar de VRChat",
-        "body": "Convocatoria abierta para una comisión de ropa para cualquier avatar de VRChat, plazas limitadas",
-        "progressLabel": "Free Commissions",
-        "progress": "0/10",
-        "showProgress": true,
-        "links": [
-          {
-            "label": "contacto",
-            "url": "https://www.instagram.com/alfhfemboy/"
-          }
-        ]
-      },
       "en": {
         "meta": "FREE",
         "headline": "Free custom clothes for any VRChat avatar",
@@ -38,9 +25,25 @@
         "progressLabel": "Free Commissions",
         "progress": "0/10",
         "showProgress": true,
+        "showTermsLink": true,
         "links": [
           {
-            "label": "contact",
+            "label": "CLICK ME!",
+            "url": "https://www.instagram.com/alfhfemboy/"
+          }
+        ]
+      },
+      "es": {
+        "meta": "GRATIS",
+        "headline": "Ropa personalizada gratis para cualquier avatar de VRChat",
+        "body": "Convocatoria abierta para una comisión de ropa para cualquier avatar de VRChat, plazas limitadas",
+        "progressLabel": "Comisiones gratuitas",
+        "progress": "0/10",
+        "showProgress": true,
+        "showTermsLink": true,
+        "links": [
+          {
+            "label": "Click Aquí!",
             "url": "https://www.instagram.com/alfhfemboy/"
           }
         ]
@@ -50,23 +53,25 @@
   {
     "id": "announcement-2",
     "type": "secondary",
-    "meta": "En busca activa de comisiones",
-    "headline": "Portafolio en crecimiento",
-    "body": "Se iran sumando nuevas piezas, versiones y galerias conforme salgan trabajos recientes.",
+    "meta": "ACTIVE COMMISSION SEARCH",
+    "headline": "Portfolio growing",
+    "body": "New pieces, versions, and galleries will keep being added as recent work comes in.",
     "image": "",
     "progress": "",
     "showProgress": false,
-    "progressLabel": "Progreso",
+    "showTermsLink": false,
+    "progressLabel": "Progress",
     "links": [],
     "accent": "#f7cade",
     "localized": {
       "es": {
-        "meta": "En busca activa de comisiones",
+        "meta": "BÚSQUEDA ACTIVA DE COMISIONES",
         "headline": "Portafolio en crecimiento",
-        "body": "Se iran sumando nuevas piezas, versiones y galerias conforme salgan trabajos recientes.",
+        "body": "Se irán sumando nuevas piezas, versiones y galerías conforme salgan trabajos recientes.",
         "progressLabel": "Progreso",
         "progress": "",
         "showProgress": false,
+        "showTermsLink": false,
         "links": []
       },
       "en": {
@@ -76,6 +81,7 @@
         "progressLabel": "Progress",
         "progress": "",
         "showProgress": false,
+        "showTermsLink": false,
         "links": []
       }
     }

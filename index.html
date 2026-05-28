@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=12" />
+    <link rel="stylesheet" href="./styles.css?v=21" />
   </head>
   <body>
     <div class="page-shell">
@@ -230,6 +230,23 @@
           </div>
         </section>
       </main>
+
+      <footer class="site-footer">
+        <div class="site-footer-copy">
+          <p class="site-footer-brand">Pawshop</p>
+          <p class="site-footer-note">Alphy / 3D artist portfolio</p>
+        </div>
+        <div class="site-footer-links">
+          <a href="./terms.html" data-i18n="footer.terms">Terminos y condiciones</a>
+        </div>
+      </footer>
+    </div>
+
+    <div class="manage-switcher" id="manage-switcher" aria-label="Secciones del editor">
+      <button class="manage-switcher-tab" type="button" data-editor-launch="projects" data-i18n="manage.projects">Proyectos</button>
+      <button class="manage-switcher-tab" type="button" data-editor-launch="announcements" data-i18n="manage.announcements">Anuncios</button>
+      <button class="manage-switcher-tab" type="button" data-editor-launch="terms" data-i18n="manage.terms">Terminos del sitio</button>
+      <button class="manage-switcher-tab manage-switcher-tab--soft" type="button" data-editor-launch="announcement-terms" data-i18n="manage.announcementTerms">Terminos del comunicado</button>
     </div>
 
     <aside class="editor-drawer" id="editor-drawer" aria-hidden="true">
@@ -414,6 +431,10 @@
             <input id="announcement-progress-toggle" name="showProgress" type="checkbox" checked />
             <span data-i18n="annEditor.progressToggle">Mostrar barra de progreso</span>
           </label>
+          <label class="toggle-field">
+            <input id="announcement-show-terms" name="showTermsLink" type="checkbox" checked />
+            <span data-i18n="annEditor.termsToggle">Mostrar terminos en el anuncio</span>
+          </label>
           <label>
             <span data-i18n="annEditor.image">Imagen</span>
             <input
@@ -453,6 +474,7 @@
           </label>
           <input id="import-announcements" type="file" accept=".json" hidden />
           <button class="button ghost" type="button" id="reset-announcements" data-i18n="annEditor.reset">Restaurar comunicados</button>
+          <button class="button ghost" type="button" id="open-announcement-terms-editor" data-i18n="annEditor.terms">Editar terminos</button>
         </div>
 
         <p class="editor-note" data-i18n="annEditor.note">
@@ -460,6 +482,130 @@
         </p>
 
         <div class="project-list" id="announcement-list-editor"></div>
+      </section>
+    </aside>
+
+    <aside class="editor-drawer announcement-terms-drawer" id="announcement-terms-drawer" aria-hidden="true">
+      <div class="drawer-backdrop" data-close-announcement-terms-editor></div>
+      <section class="drawer-panel" aria-label="Editor de terminos de comunicados">
+        <div class="drawer-header">
+          <div>
+            <p class="eyebrow" data-i18n="annTermsEditor.eyebrow">Terminos de comunicados</p>
+            <h2 data-i18n="annTermsEditor.title">Editar terminos del comunicado principal</h2>
+          </div>
+          <button class="icon-button" type="button" data-close-announcement-terms-editor>
+            <span data-i18n="editor.close">Cerrar</span>
+          </button>
+        </div>
+
+        <form class="project-form" id="announcement-terms-form">
+          <input type="hidden" id="announcement-terms-id" value="announcement-terms" />
+          <label>
+            <span data-i18n="annTermsEditor.pageTitle">Titulo</span>
+            <input id="announcement-terms-title" name="title" type="text" required />
+          </label>
+          <label>
+            <span data-i18n="annTermsEditor.updatedAt">Ultima actualizacion</span>
+            <input id="announcement-terms-updated-at" name="updatedAt" type="date" required />
+          </label>
+          <label>
+            <span data-i18n="annTermsEditor.intro">Introduccion</span>
+            <textarea id="announcement-terms-intro" name="intro" rows="5" required></textarea>
+          </label>
+          <label>
+            <span data-i18n="annTermsEditor.points">Puntos clave</span>
+            <textarea id="announcement-terms-points" name="points" rows="6"></textarea>
+          </label>
+          <label>
+            <span data-i18n="annTermsEditor.closing">Cierre</span>
+            <textarea id="announcement-terms-closing" name="closing" rows="4"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="button primary" type="submit" data-i18n="annTermsEditor.save">Guardar terminos</button>
+            <button class="button ghost" type="button" id="reset-announcement-terms-form">
+              <span data-i18n="annTermsEditor.new">Restaurar ejemplo</span>
+            </button>
+          </div>
+        </form>
+
+        <div class="drawer-tools">
+          <button class="button ghost" type="button" id="export-announcement-terms" data-i18n="annTermsEditor.export">Exportar JSON</button>
+          <label class="button ghost upload-button" for="import-announcement-terms">
+            <span data-i18n="annTermsEditor.import">Importar JSON</span>
+          </label>
+          <input id="import-announcement-terms" type="file" accept=".json" hidden />
+          <button class="button ghost" type="button" id="reset-announcement-terms" data-i18n="annTermsEditor.reset">Restaurar terminos</button>
+        </div>
+
+        <p class="editor-note" data-i18n="annTermsEditor.note">
+          Estos terminos solo se muestran en el comunicado principal y se guardan por separado de los terminos generales del sitio.
+        </p>
+      </section>
+    </aside>
+
+    <aside class="editor-drawer terms-drawer" id="terms-drawer" aria-hidden="true">
+      <div class="drawer-backdrop" data-close-terms-editor></div>
+      <section class="drawer-panel" aria-label="Editor de terminos y condiciones">
+        <div class="drawer-header">
+          <div>
+            <p class="eyebrow" data-i18n="termsEditor.eyebrow">Terminos y condiciones</p>
+            <h2 data-i18n="termsEditor.title">Editar terminos</h2>
+          </div>
+          <button class="icon-button" type="button" data-close-terms-editor>
+            <span data-i18n="editor.close">Cerrar</span>
+          </button>
+        </div>
+
+        <form class="project-form" id="terms-form">
+          <input type="hidden" id="terms-id" value="terms" />
+          <label>
+            <span data-i18n="termsEditor.pageTitle">Titulo de la pagina</span>
+            <input id="terms-title" name="title" type="text" required />
+          </label>
+          <label>
+            <span data-i18n="termsEditor.updatedAt">Ultima actualizacion</span>
+            <input id="terms-updated-at" name="updatedAt" type="date" required />
+          </label>
+          <label>
+            <span data-i18n="termsEditor.intro">Introduccion</span>
+            <textarea id="terms-intro" name="intro" rows="5" required></textarea>
+            <small class="field-hint" data-i18n="termsEditor.introHint">
+              Usa parrafos cortos para que se lea mejor en la pagina publica.
+            </small>
+          </label>
+          <label>
+            <span data-i18n="termsEditor.points">Puntos clave</span>
+            <textarea id="terms-points" name="points" rows="6"></textarea>
+            <small class="field-hint" data-i18n="termsEditor.pointsHint">
+              Escribe un punto por linea. Cada linea se mostrara como una viñeta.
+            </small>
+          </label>
+          <label>
+            <span data-i18n="termsEditor.closing">Cierre</span>
+            <textarea id="terms-closing" name="closing" rows="4"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="button primary" type="submit" data-i18n="termsEditor.save">Guardar terminos</button>
+            <button class="button ghost" type="button" id="reset-terms-form">
+              <span data-i18n="termsEditor.new">Restaurar ejemplo</span>
+            </button>
+          </div>
+        </form>
+
+        <div class="drawer-tools">
+          <button class="button ghost" type="button" id="export-terms" data-i18n="termsEditor.export">Exportar JSON</button>
+          <label class="button ghost upload-button" for="import-terms">
+            <span data-i18n="termsEditor.import">Importar JSON</span>
+          </label>
+          <input id="import-terms" type="file" accept=".json" hidden />
+          <button class="button ghost" type="button" id="reset-terms" data-i18n="termsEditor.reset">Restaurar terminos</button>
+        </div>
+
+        <p class="editor-note" data-i18n="termsEditor.note">
+          Los terminos y condiciones se guardan como borrador en tu navegador y tambien puedes exportarlos como JSON aparte.
+        </p>
       </section>
     </aside>
 
@@ -528,6 +674,9 @@
               </div>
             </div>
             <div class="announcement-links"></div>
+            <a class="announcement-terms-link announcement-link" href="./announcement-terms.html" data-i18n="announcementTerms.button">
+              Ver terminos del comunicado
+            </a>
           </div>
           <div class="announcement-image" hidden></div>
         </div>
@@ -553,6 +702,6 @@
       </article>
     </template>
 
-    <script src="./script.js?v=16"></script>
+    <script src="./script.js?v=23"></script>
   </body>
 </html>
