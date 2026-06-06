@@ -2,48 +2,32 @@
   "updatedAt": "2026-05-27",
   "localized": {
     "es": {
-      "title": "TÉRMINOS DE SERVICIO — COMISIONES GRATUITAS",
-      "intro": "Existen comisiones gratuitas estrictamente para la práctica, la mejora del flujo de trabajo, el desarrollo de habilidades de modelado/texturizado y la creación de carteras.\n\nAl solicitar una comisión gratuita, el cliente acepta automáticamente todos los términos enumerados en este documento.\n\nEl resultado final siempre será una adaptación creada dentro del estilo, el flujo de trabajo y las capacidades técnicas actuales del artista.",
+      "title": "Términos del comunicado principal",
+      "intro": "Este comunicado principal incluye condiciones de uso separadas de los términos generales del sitio.\n\nAplica solo al anuncio destacado de comisiones gratuitas.\n\nLee el texto completo antes de pedir una comisión.",
       "points": [
-        "Las comisiones gratuitas son limitadas y no permanentes",
-        "No se aceptarán todas las solicitudes",
-        "El artista puede aceptar, rechazar o cancelar solicitudes en cualquier momento",
-        "Los clientes deben proporcionar referencias claras antes de que comience el trabajo",
-        "No se aceptarán armaduras ni diseños extremadamente complicados",
-        "Los plazos de entrega no están garantizados",
-        "Las revisiones de los formularios están limitadas",
-        "Los cambios excesivos o las solicitudes de rediseño pueden ser rechazadas",
-        "Todos los modelos, texturas y activos siguen siendo propiedad intelectual del artista",
-        "Las comisiones gratuitas solo otorgan una licencia de uso personal y no exclusiva",
-        "Los clientes pueden usar el trabajo para uso personal/avatar y compartirlo de forma gratuita",
-        "Los clientes NO pueden revender, redistribuir comercialmente o reclamar la autoría de la obra",
-        "El artista puede utilizar el trabajo encargado para la cartera, vistas previas, redes sociales y fines promocionales",
-        "El acoso, el spam o el comportamiento irrespetuoso pueden resultar en la cancelación o la lista negra de futuras comisiones",
-        "Los datos pueden cambiar en cualquier momento sin previo aviso."
+        "La disponibilidad es limitada y no garantiza aceptación.",
+        "El artista puede aceptar o rechazar solicitudes y referencias.",
+        "Los plazos pueden variar según complejidad, disponibilidad y carga de trabajo.",
+        "Las revisiones son limitadas y se pueden rechazar cambios excesivos.",
+        "El trabajo sigue siendo propiedad intelectual del artista y solo concede uso personal no exclusivo.",
+        "El artista puede publicar renders, WIPs y vistas previas en portafolio o redes.",
+        "El acoso, el spam o la presión excesiva pueden terminar en cancelación o bloqueo."
       ],
-      "closing": "Solicitar una comisión gratuita confirma que el cliente ha leído, entendido y aceptado todos los términos enumerados anteriormente."
+      "closing": "Si quieres reutilizar o compartir esta información, revisa primero el comunicado completo."
     },
     "en": {
-      "title": "TERMS OF SERVICE — FREE COMMISSIONS",
-      "intro": "Free commissions exist strictly for practice, workflow improvement, modeling/texturing skill development and portfolio building.\n\nBy requesting a free commission, the client automatically agrees to all terms listed in this document.\n\nThe final result will always be an adaptation created within the artist’s current style, workflow and technical capabilities.",
+      "title": "Primary announcement terms",
+      "intro": "This featured announcement includes usage conditions that are separate from the general site terms.\n\nIt only applies to the highlighted free commission announcement.\n\nPlease read the full text before requesting a commission.",
       "points": [
-        "Free commissions are limited and not permanent",
-        "Not all requests will be accepted",
-        "The artist may accept, reject or cancel requests at any time",
-        "Clients must provide clear references before work begins",
-        "Armor and extremely overcomplicated designs will not be accepted",
-        "Delivery times are not guaranteed",
-        "Revisions are limited",
-        "Excessive changes or redesign requests may be rejected",
-        "All models, textures and assets remain the intellectual property of the artist",
-        "Free commissions only grant a personal, non-exclusive usage license",
-        "Clients may use the work for personal/avatar use and share it for free",
-        "Clients may NOT resell, commercially redistribute or claim authorship of the work",
-        "The artist may use commissioned work for portfolio, previews, social media and promotional purposes",
-        "Harassment, spam or disrespectful behavior may result in cancellation or blacklist from future commissions",
-        "Terms may change at any time without prior notice"
+        "Availability is limited and acceptance is not guaranteed.",
+        "The artist may accept or reject requests and references.",
+        "Timelines can vary depending on complexity, availability, and workload.",
+        "Revisions are limited and excessive changes may be rejected.",
+        "The work remains the artist's intellectual property and only grants a personal, non-exclusive usage license.",
+        "The artist may post renders, WIPs, and previews in a portfolio or on social media.",
+        "Harassment, spam, or excessive pressure may result in cancellation or blocking."
       ],
-      "closing": "Requesting a free commission confirms that the client has read, understood and accepted all terms listed above."
+      "closing": "If you want to reuse or share this information, review the full announcement first."
     }
   }
 }
