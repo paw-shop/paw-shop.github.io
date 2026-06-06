@@ -1,60 +1,81 @@
-# Alphy Portfolio
+# Commission Upload Portal
 
-Portfolio en HTML, CSS y JavaScript.
+Sitio estatico para GitHub Pages + backend de Google Apps Script que guarda los archivos en una carpeta concreta de Google Drive.
 
-## Abrir localmente
+## Archivos incluidos
 
-Abre `index.html` en tu navegador.
+- `index.html`
+- `styles.css`
+- `script.js`
+- `Code.gs`
+- `appsscript.json`
 
-## Editar proyectos
+## Como funciona
 
-1. En la web, pulsa `Editar proyectos`.
-2. Agrega o modifica nombre, descripcion, tags, link y color.
-3. Puedes agregar una imagen principal y una galeria usando URLs o rutas locales del repo.
-4. Pulsa `Guardar`.
+1. El cliente llena el formulario en GitHub Pages.
+2. El frontend convierte cada archivo a base64 en el navegador.
+3. El navegador manda cada archivo al web app de Apps Script con un formulario oculto.
+4. Apps Script decodifica el archivo y lo guarda directo en tu carpeta de Google Drive.
+5. La respuesta vuelve por `postMessage` para mostrar exito o error sin romper GitHub Pages.
 
-Los cambios del editor se guardan en tu navegador como borrador con `localStorage`.
-La web publica lee el archivo `projects.json`.
+## Setup paso a paso
 
-## Exportar o importar
+### 1) Crear el proyecto de Google Apps Script
 
-- `Exportar JSON` descarga tus proyectos actuales.
-- `Importar JSON` vuelve a cargar un archivo exportado.
-- `Restaurar ejemplo` recupera los proyectos de muestra.
+1. Ve a https://script.google.com/.
+2. Crea un proyecto nuevo.
+3. Borra el contenido por defecto y pega `Code.gs`.
+4. Agrega el archivo `appsscript.json` en el editor de manifiesto si vas a trabajar con un proyecto fuente.
 
-## Publicar cambios de proyectos
+### 2) Poner el ID de tu carpeta de Drive
 
-1. Edita tus proyectos en la web.
-2. Pulsa `Exportar JSON`.
-3. Renombra el archivo exportado a `projects.json`.
-4. Reemplaza `projects.json` en tu repo de GitHub.
-5. Haz commit del cambio.
+1. Abre la carpeta destino en Google Drive.
+2. Copia el ID de la URL.
+3. La URL se ve asi:
 
-GitHub Pages publicara la nueva version automaticamente.
+   `https://drive.google.com/drive/folders/FOLDER_ID_AQUI`
 
-## Paginas individuales de proyecto
+4. Pega ese valor en `Code.gs` dentro de `CONFIG.folderId`.
 
-- Cada tarjeta abre `project.html?id=...`.
-- Esa pagina lee `projects.json` y muestra nombre, descripcion, link e imagenes.
-- `coverImage` sirve para la portada.
-- `gallery` sirve para la galeria del proyecto.
+### 3) Desplegar como Web App
 
-## Donde poner las imagenes
+1. En Apps Script, ve a **Deploy > New deployment**.
+2. Elige **Web app**.
+3. En **Execute as**, selecciona **Me**.
+4. En **Who has access**, selecciona **Anyone**.
+5. Haz clic en **Deploy**.
+6. Autoriza los permisos cuando te los pida.
+7. Copia la URL que termina en `/exec`.
 
-Usa la carpeta `images/`.
+### 4) Conectar el frontend de GitHub Pages
 
-- [images/README.md](C:/Users/juanz/Downloads/alphy-portfolio-main/images/README.md)
-- `images/project-1/`
-- `images/project-2/`
-- `images/project-3/`
+1. Abre `script.js`.
+2. Reemplaza `PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE` con la URL `/exec` del paso anterior.
+3. Guarda y publica los cambios en GitHub.
 
-## Subir a GitHub Pages
+### 5) Publicar en GitHub Pages
 
-1. Crea un repositorio nuevo en GitHub.
-2. Sube todo el contenido de esta carpeta.
-3. Asegurate de que la rama principal se llame `main`.
-4. En GitHub, ve a `Settings > Pages`.
-5. En `Source`, selecciona `GitHub Actions`.
-6. Haz push a `main`.
+1. Sube estos archivos al repositorio de tu sitio.
+2. Ve a **Settings > Pages** en GitHub.
+3. Elige la rama y la carpeta donde estan `index.html`, `styles.css` y `script.js`.
+4. Espera a que GitHub Pages genere la URL publica.
 
-El workflow en `.github/workflows/deploy-pages.yml` publicara la web automaticamente.
+## Prueba rapida
+
+1. Abre tu sitio de GitHub Pages.
+2. Completa nombre, contacto, descripcion y archivos.
+3. Envia el formulario.
+4. Revisa tu carpeta de Google Drive para confirmar que los archivos llegaron.
+
+## Notas utiles
+
+- El formulario soporta varios archivos.
+- El progreso se muestra en pantalla mientras el navegador prepara y envia cada archivo.
+- Si tus archivos son muy pesados, puedes topar limites practicos de Apps Script y del navegador.
+- La configuracion usa `DriveApp` para guardar todo directo en la carpeta indicada.
+
+## Fuentes oficiales utiles
+
+- https://developers.google.com/apps-script/guides/web
+- https://developers.google.com/apps-script/reference/html/x-frame-options-mode
+- https://developers.google.com/apps-script/manifest
