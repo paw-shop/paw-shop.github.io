@@ -32,13 +32,14 @@ const translations = {
 };
 
 const fallbackAnnouncementTerms = {
-  updatedAt: "2026-05-27",
+  updatedAt: "2026-06-05",
   localized: {
     es: {
       title: "Términos del comunicado principal",
       intro: "Este comunicado principal incluye condiciones de uso separadas de los términos generales del sitio.\n\nAplica solo al anuncio destacado de comisiones gratuitas.\n\nLee el texto completo antes de pedir una comisión.",
       points: [
         "La disponibilidad es limitada y no garantiza aceptación.",
+        "Maximo 1 modelo por persona.",
         "El artista puede aceptar o rechazar solicitudes y referencias.",
         "Los plazos pueden variar según complejidad, disponibilidad y carga de trabajo.",
         "Las revisiones son limitadas y se pueden rechazar cambios excesivos.",
@@ -53,6 +54,7 @@ const fallbackAnnouncementTerms = {
       intro: "This featured announcement includes usage conditions that are separate from the general site terms.\n\nIt only applies to the highlighted free commission announcement.\n\nPlease read the full text before requesting a commission.",
       points: [
         "Availability is limited and acceptance is not guaranteed.",
+        "Maximum 1 model per person.",
         "The artist may accept or reject requests and references.",
         "Timelines can vary depending on complexity, availability, and workload.",
         "Revisions are limited and excessive changes may be rejected.",
