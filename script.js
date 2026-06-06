@@ -2,7 +2,7 @@
 
 const CONFIG = {
   // Pega aqui la URL /exec de tu Web App de Google Apps Script.
-  scriptUrl: "https://script.google.com/macros/s/AKfycbyIPfarKlXzz7PRflxnObjXTModiqqL_kGjjZLz5bgUlOnoHq2TDowtPyGsQAtBzZ7c/exec",
+  scriptUrl: "https://script.google.com/macros/s/AKfycbydmKru4QlxJTpSXO94y8z2T8yJnMHmwM-Elqz15Q9ToRKW8TrL_bmxUBgC1NF9NAqj/exec",
   // Permitimos las respuestas de Google Apps Script y Googleusercontent.
   allowedOrigins: ["https://script.google.com", "https://script.googleusercontent.com"],
   requestTimeoutMs: 90000
