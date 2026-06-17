@@ -13,9 +13,12 @@
     "category": "Proyecto",
     "gumroadLink": "https://alphfem.gumroad.com/l/Bloodstatic",
     "boothLink": "https://alphy.booth.pm/items/8518242",
-    "coverImage": "./images/project-7/project-7.1",
+    "coverImage": "./images/project-7/project-7.1,png",
     "gallery": [
-      "./images/project-7"
+      "./images/project-7/proyect7.1.jpg",
+      "./images/project-7/project-7.2,png",
+      "./images/project-7/project-7.3,png",
+      "./images/project-7/project-7.4,png"
     ],
     "accent": "#f7cade"
   },
