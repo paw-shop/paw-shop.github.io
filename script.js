@@ -1816,7 +1816,7 @@ function exportProjects() {
   const url = URL.createObjectURL(blob);
   const anchor = document.createElement("a");
   anchor.href = url;
-  anchor.download = "alphy-projects.json";
+  anchor.download = "projects.json";
   anchor.click();
   URL.revokeObjectURL(url);
 }
