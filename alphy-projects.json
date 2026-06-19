@@ -13,6 +13,7 @@
     "category": "Outfit",
     "gumroadLink": "https://alphfem.gumroad.com/l/MIDNIGHTMONSTER",
     "boothLink": "https://alphy.booth.pm/items/8524936",
+    "accent": "#f7cade",
     "coverImage": "./images/project-8/project8.1.jpg",
     "gallery": [
       "./images/project-8/project8.1.jpg",
@@ -20,8 +21,7 @@
       "./images/project-8/project8.3.png",
       "./images/project-8/project8.4.png",
       "./images/project-8/project8.5.png"
-    ],
-    "accent": "#f7cade"
+    ]
   },
   {
     "id": "9d41cd2c-9c06-46bc-b5dd-62fdbcc8620e",
@@ -48,9 +48,9 @@
     ]
   },
   {
-    "id": "c98f47bd-7886-4e5a-972b-5602cc236806",
-    "title": "SnowFox set For Deira",
-    "description": "Stylized Casual Set - VRChat / Anime Style\n\nStylized female outfit designed for anime and VR-style characters, suitable for VRChat avatars and general 3D rendering.\n\nThis outfit features a clean, minimal crop top with a high-neck design and soft blue trim accents that frame the chest and neckline, creating a fresh and modern look. The top is designed to sit snugly on the torso, emphasizing a smooth and stylized silhouette.\n\nThe set is completed with low-rise shorts featuring matching blue accents, belt details, and functional-style seams that add a casual yet polished aesthetic. The overall design feels light, cute, and contemporary, making it ideal for everyday avatar use while maintaining an anime-inspired style.\n\nPerfect for stylized avatars, casual renders, showcases, and customizable character models.\n\nCharacter body shown is for preview purposes only and is not included.\n\nTechnical Details\n\nCompatible with the Deira base\n\nDeira base model is not included\n\nNo blendshapes included\n\nOptimized for VRChat / Unity / Blender\n\nOriginal design by Korura Club",
+    "id": "930ddc7f-38ad-4800-ac03-2b31881fedfe",
+    "title": "Demon Suit Deira V2",
+    "description": "Stylized Bat Outfit - VRChat / Anime Style\n\nStylized female outfit designed for anime and VR-style characters, suitable for VRChat avatars and general 3D rendering.\n\nThis outfit features a sleek, glossy black bodysuit with a form-fitting silhouette and sharp, wing-inspired seam details on the chest. A heart-shaped semi-transparent mesh panel at the torso adds a cute yet edgy focal point. Oversized bat-wing-style sleeves with a reflective finish give the design a bold gothic and vampiric aesthetic, while a matching choker with a central jewel completes the look.\n\nPerfect for stylized avatars, renders, showcases, and customizable character models.\n\nCharacter body shown is for preview purposes only and is not included.\n\nTechnical Details\n\n6826 vertices\n\nCompatible with the Deira base\n\nDeira base model is not included\n\nNo blendshapes included\n\nOptimized for VRChat / Unity / Blender",
     "tags": [
       "Blender",
       "Vrchat",
@@ -59,14 +59,15 @@
       "Bodysuit"
     ],
     "category": "Outfit",
-    "gumroadLink": "https://alphfem.gumroad.com/l/SnowFoxset",
-    "boothLink": "https://alphy.booth.pm/items/7904408",
+    "gumroadLink": "https://alphfem.gumroad.com/l/DemonDeiraSuit",
+    "boothLink": "https://alphy.booth.pm/items/7904401",
     "accent": "#f7cade",
-    "coverImage": "./images/project-5/proyect5.1.jpg",
+    "coverImage": "./images/project-3/proyect3.1.jpg",
     "gallery": [
-      "./images/project-5/proyect5.1.jpg",
-      "./images/project-5/proyect5.2.jpg",
-      "./images/project-5/proyect5.3.jpg"
+      "./images/project-3/proyect3.1.jpg",
+      "./images/project-3/proyect3.2.jpg",
+      "./images/project-3/proyect3.3.jpg",
+      "./images/project-3/proyect3.4.jpg"
     ]
   },
   {
@@ -93,29 +94,6 @@
     ]
   },
   {
-    "id": "930ddc7f-38ad-4800-ac03-2b31881fedfe",
-    "title": "Demon Suit Deira V2",
-    "description": "Stylized Bat Outfit - VRChat / Anime Style\n\nStylized female outfit designed for anime and VR-style characters, suitable for VRChat avatars and general 3D rendering.\n\nThis outfit features a sleek, glossy black bodysuit with a form-fitting silhouette and sharp, wing-inspired seam details on the chest. A heart-shaped semi-transparent mesh panel at the torso adds a cute yet edgy focal point. Oversized bat-wing-style sleeves with a reflective finish give the design a bold gothic and vampiric aesthetic, while a matching choker with a central jewel completes the look.\n\nPerfect for stylized avatars, renders, showcases, and customizable character models.\n\nCharacter body shown is for preview purposes only and is not included.\n\nTechnical Details\n\n6826 vertices\n\nCompatible with the Deira base\n\nDeira base model is not included\n\nNo blendshapes included\n\nOptimized for VRChat / Unity / Blender",
-    "tags": [
-      "Blender",
-      "Vrchat",
-      "Clothes",
-      "Unity",
-      "Bodysuit"
-    ],
-    "category": "Outfit",
-    "gumroadLink": "https://alphfem.gumroad.com/l/DemonDeiraSuit",
-    "boothLink": "https://alphy.booth.pm/items/7904401",
-    "accent": "#f7cade",
-    "coverImage": "./images/project-3/proyect3.1.jpg",
-    "gallery": [
-      "./images/project-3/proyect3.1.jpg",
-      "./images/project-3/proyect3.2.jpg",
-      "./images/project-3/proyect3.3.jpg",
-      "./images/project-3/proyect3.4.jpg"
-    ]
-  },
-  {
     "id": "7c03296f-3549-4572-ab06-2579413247ed",
     "title": "Bunny Strap Set For Deira",
     "description": "Stylized Female Outfit - VRChat / Anime Style\n\nStylized female outfit designed for anime and VR-style characters, suitable for use in VRChat avatars and general 3D rendering.\n\nThe outfit features a fitted bodysuit with soft pastel accents and subtle pattern details. Black contrasting elements include thigh-high stockings, shoulder sleeves, and a minimal lower garment that creates a strong visual contrast. A harness-style strap system wraps around the torso, featuring a metallic buckle at the chest and vertical straps that enhance the silhouette and add a modern, edgy touch.\n\nThe overall design emphasizes a sleek, form-fitting shape while maintaining a cute yet slightly provocative aesthetic. Ideal for stylized avatars, renders, showcases, and customizable character models.\n\nCharacter body shown is for preview purposes only and is not included.\n\nOriginal Design\n\nOriginal design by Korura Club\n\nTechnical Details\n\n10,975 vertices\n\n3 materials\n\nPrefab included\n\nCompatible with the Deira base\n\nDeira base model is not included\n\nBlendshapes included: Breast size Tiger",
@@ -135,6 +113,28 @@
       "./images/project-2/proyect2.1.jpg",
       "./images/project-2/proyect2.2.jpg",
       "./images/project-2/proyect2.3.jpg"
+    ]
+  },
+  {
+    "id": "c98f47bd-7886-4e5a-972b-5602cc236806",
+    "title": "SnowFox set For Deira",
+    "description": "Stylized Casual Set - VRChat / Anime Style\n\nStylized female outfit designed for anime and VR-style characters, suitable for VRChat avatars and general 3D rendering.\n\nThis outfit features a clean, minimal crop top with a high-neck design and soft blue trim accents that frame the chest and neckline, creating a fresh and modern look. The top is designed to sit snugly on the torso, emphasizing a smooth and stylized silhouette.\n\nThe set is completed with low-rise shorts featuring matching blue accents, belt details, and functional-style seams that add a casual yet polished aesthetic. The overall design feels light, cute, and contemporary, making it ideal for everyday avatar use while maintaining an anime-inspired style.\n\nPerfect for stylized avatars, casual renders, showcases, and customizable character models.\n\nCharacter body shown is for preview purposes only and is not included.\n\nTechnical Details\n\nCompatible with the Deira base\n\nDeira base model is not included\n\nNo blendshapes included\n\nOptimized for VRChat / Unity / Blender\n\nOriginal design by Korura Club",
+    "tags": [
+      "Blender",
+      "Vrchat",
+      "Clothes",
+      "Unity",
+      "Bodysuit"
+    ],
+    "category": "Outfit",
+    "gumroadLink": "https://alphfem.gumroad.com/l/SnowFoxset",
+    "boothLink": "https://alphy.booth.pm/items/7904408",
+    "accent": "#f7cade",
+    "coverImage": "./images/project-5/proyect5.1.jpg",
+    "gallery": [
+      "./images/project-5/proyect5.1.jpg",
+      "./images/project-5/proyect5.2.jpg",
+      "./images/project-5/proyect5.3.jpg"
     ]
   },
   {
