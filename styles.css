@@ -81,7 +81,6 @@ textarea {
 .window-body h2,
 .drawer-header h2,
 .project-card h3,
-.highlights h2,
 .announcement-card h3,
 .project-empty h3 {
   font-family: "Playfair Display", serif;
@@ -176,7 +175,6 @@ textarea {
 .hero-description,
 .section-heading p,
 .window-body p,
-.highlights p,
 .project-description,
 .item-description,
 .announcement-card p {
@@ -394,8 +392,7 @@ textarea {
 .announcement-card,
 .contact-list a,
 .project-item,
-.project-empty,
-.highlights article {
+.project-empty {
   border-radius: 22px;
   border: 1px solid rgba(171, 111, 137, 0.18);
   background: rgba(255, 248, 251, 0.95);
@@ -426,34 +423,6 @@ textarea {
   font-size: 1.02rem;
 }
 
-.highlights {
-  display: grid;
-  gap: 14px;
-}
-
-.highlights article {
-  padding: 20px;
-}
-
-.highlights span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgba(231, 156, 190, 0.72);
-  color: #8c6172;
-  font-weight: 700;
-}
-
-.highlights h2 {
-  margin: 14px 0 10px;
-  font-size: 1.5rem;
-  line-height: 1.08;
-  color: #6f4b59;
-}
-
 .section-heading {
   max-width: 760px;
   margin-bottom: 28px;
@@ -467,7 +436,6 @@ textarea {
 
 .presentation-window .window-body,
 .projects-window .window-body,
-.highlights-window .window-body,
 .announcements-window .window-body,
 .contact-window .window-body {
   position: relative;
@@ -475,7 +443,6 @@ textarea {
 
 .presentation-window .window-body::before,
 .projects-window .window-body::before,
-.highlights-window .window-body::before,
 .announcements-window .window-body::before,
 .contact-window .window-body::before {
   content: "";
@@ -495,7 +462,6 @@ textarea {
 
 .presentation-window .window-body > *,
 .projects-window .window-body > *,
-.highlights-window .window-body > *,
 .announcements-window .window-body > *,
 .contact-window .window-body > * {
   position: relative;
